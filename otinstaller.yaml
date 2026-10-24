@@ -35,7 +35,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/hunter-domain-search@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/hunter-domain-search@sha256:e4cd4bfd4f853741915149a1a45c918d8d615e36cfc5167c1698f023ff442434
   platforms: [linux/amd64, linux/arm64]
   command: ["hunter-domain-search", "{domain}", "--limit", "{limit}"]
   output_format: json
